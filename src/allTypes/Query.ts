@@ -18,7 +18,6 @@ export const Query = queryType({
         t.field("position", {
             type: Position,
             description: "Find a position by its ID",
-            nullable: true,
             args: { id: idArg() },
             resolve: (root, { id }: { id: string }, ctx) => 
             data.positions.find((position) => position.id === id),
