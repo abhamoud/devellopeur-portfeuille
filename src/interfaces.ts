@@ -12,7 +12,7 @@ export interface PositionInterface {
     id: string;
     title: string;
     company: string;
-    starDate: string;
+    startDate: string;
     endDate?: string;
     location: string;
     achievements: string[];
