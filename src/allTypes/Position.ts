@@ -13,7 +13,6 @@ export const Position = objectType({
             resolve: (position) => new Date(position.startDate),
         });
         t.date("endDate", {
-            nullable: true,
             resolve: (position) => 
             position.endDate ? new Date(position.endDate) : null,
         });
